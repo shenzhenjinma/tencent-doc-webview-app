@@ -1,0 +1,39 @@
+{
+  "name": "tencentdoc",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "build": {
+    "appId": "cn.pt0.tencentdocwebapp",
+    "mac": {
+      "icon": "icon.png",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "icon": "icon.png",
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "buildmac": "electron-builder --mac --x64",
+    "buildwin": "electron-builder --win --x64"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "tencentdoc"
+  ],
+  "author": "techbin",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^11.0.1",
+    "electron-builder": "^22.2.0"
+  }
+}
